@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/single-price-grid-component-solution-html-css-flexbox-grid-lQl2dkOBKZ
+- Live Site URL: https://leon2610.github.io/single-price-grid-component/
 
 ## My process
 
