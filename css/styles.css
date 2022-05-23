@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--LightGray);
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 635px;
+  height: 475px;
+  box-shadow: -1px 6px 5px 10px rgba(0, 0, 0, 0.03);
+}
+
+main .container .community-container {
+  grid-column: 1/3;
+  background: white;
+  border-radius: 5px 5px 0 0;
+}
+
+main .container .community-container,
+main .container .subscription-container,
+main .container .why-us-container {
+  padding: 38px;
+}
+
+main .container .community-container h1 {
+  color: var(--Cyan);
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+main .container .community-container h2 {
+  color: var(--BrightYellow);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+main .container .subscription-container {
+  background-color: var(--Cyan);
+  border-radius: 0px 0px 0px 5px;
+}
+
+main .container .why-us-container {
+  background-color: #4abebd;
+  border-radius: 0px 0px 5px 0;
+}
+
+main .container .subscription-container h2,
+main .container .why-us-container h2 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+
+main .container .subscription-container span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+main .container .subscription-container button {
+  padding: 15px 91px;
+  margin-top: 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--BrightYellow);
+  color: white;
+  border-radius: 5px;
+}
+
+main .container .subscription-container button:hover {
+    background-color: hsl(71, 81%, 45%);
+}
+
+main .container .community-container {
+  color: var(--GrayishBlue);
+}
+
+main .container .subscription-container p,
+main .container .why-us-container p {
+  margin-bottom: 0.5rem;
+  color: var(--LightGray);
+}
+
+@media (max-width: 660px) {
+  body {
+    justify-content: flex-start;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    box-shadow: -1px 6px 5px 10px rgba(0, 0, 0, 0.03);
+    margin: 30px 0;
+  }
+
+  main .container .subscription-container {
+    border-radius: 0;
+  }
+  main .container .why-us-container {
+      border-radius: 0 0 5px 5px;
+  }
+}
